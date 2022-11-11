@@ -45,5 +45,5 @@ jobs:
         uses: grafana/k6-action@v0.2.0
         with:
           filename: $GITHUB_WORKSPACE/main.js
-          flags: -v -q # verbose, quiet
+          flags: -v -q --vus 5 # verbose, quiet
 
