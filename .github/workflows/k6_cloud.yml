@@ -46,7 +46,7 @@ jobs:
         with:
           cloud: true
           filename: $GITHUB_WORKSPACE/main.js
-          flags: -u 10 -q # verbose, quiet
+          flags: -q # verbose, quiet
           token: ${{ secrets.K6_CLOUD_TOKEN }}
         env:
           K6_CLOUD_PROJECT_ID: ${{ secrets.K6_CLOUD_PROJECT_ID }}
